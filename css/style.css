@@ -1,0 +1,412 @@
+@font-face{
+	font-family: "Novecentowide";
+	src: url(../fonts/Novecento.otf);
+}
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('../fonts/MyriadPro-Regular.eot');
+src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/MyriadPro-Regular.woff') format('woff'),
+url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 50px 65px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	border-top: 8px solid #f2ac04;
+	border-radius: 2px;
+	padding: 0 35px 16px 35px;
+}
+div{
+	align-items: center;
+	flex-wrap: wrap;
+	display: flex;
+}
+h1{
+	margin: 0 40px 0 25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 34px;
+	color: #3c3c3c;
+}
+h2, h3{
+	margin: 0;
+}
+.banner{
+	margin-top: 40px;
+}
+	.bannerLeft{
+		flex: 1;
+		flex-wrap: nowrap;
+		border-right: 1px solid #cac8c5;
+	}
+		.logoCircleLeft{
+			height: 56px;
+			width: 56px;
+			border-radius: 50%;
+			background: #f8d277;
+		}
+		.logoCircleRight{
+			height: 56px;
+			width: 56px;
+			border-radius: 50%;
+			background: #f2ac04;
+			margin-left: -39px;
+		}
+.bannerRight{
+	flex: 3;
+	display: block;
+	margin-left: 27px;
+}
+	.bannerRightTop{
+		color: #f2ac04;
+		font-size: 20px;
+		font-weight: 300;
+		font-family: Novecentowide;
+	}
+	.bannerRightBot{
+		color: #929292;
+		margin-top: 10px;
+		font-size: 14px;
+	}
+.navbar{
+	height: 44px;
+	margin-top: 38px;
+	border-top: 1px solid rgb(171,171,171);
+	border-bottom: 1px solid rgb(171,171,171);
+}
+	.navButton{
+		font-size: 18px;
+		color: #6b6b6b;
+		text-decoration: none;
+		margin-right: 77px;
+	}
+	.navButton:hover{
+		text-decoration: underline;
+	}
+.featuredProducts{
+	margin-top: 39px;
+	font-size: 12px;
+	color: #555656;
+	font-family: Tahoma;
+	font-weight: 600;
+}
+.imagesBlock{
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 11px;
+	padding-bottom: 33px;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+	.senoWrapper{
+		padding: 1px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+	}
+		.senoBlock{
+			flex-direction: column;
+			align-items: flex-start;
+			border: 1px solid rgb(214,214,214);
+		}
+			.senoImg{
+				height: 257px;
+			}
+			.senoFooter{
+				height: 48px;
+				color: #565656;
+				font-family: Tahoma;
+				font-size: 18px;
+			}
+				.pointerLeft{
+					margin-left: 23px;
+					margin-right: 37px;
+				}
+				.pointerRight{
+					margin-left: 108px;
+				}
+	.statuesWrapper{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+		.statuesBlock{
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-start;
+			height: 206px;
+			width: 450px;
+			background-image: url(../images/statues.png);
+			background-repeat: no-repeat;
+			color: white;
+			padding-left: 20px;
+			border-bottom: 1px solid black;
+		}
+			span.preview{
+				display: block;
+				font-family: Novecentowide;
+				font-size: 26px;
+			}
+			span.lispum{
+				display: block;
+				font-family: Tahoma;
+				font-size: 40px;
+			}
+			span.comoodo{
+				display: block;
+				font-family: Tahoma;
+				font-size: 40px;
+				margin-bottom: 14px;
+
+			}
+		.statuesText{
+			width: 450px;
+			align-items: flex-start;
+			margin-top: 10px;
+			color: #3c3c3c;
+			font-size: 14px;
+			line-height: 23px;
+		}
+.infoBlock{
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 37px;
+}
+	.latestNews{
+		flex-direction: column;
+		align-items: flex-start;
+		padding-right: 10px;
+		padding-bottom: 12px;
+		border-right: 1px solid rgb(229,229,229);
+	}
+		.newsRow{
+			width: 265px;
+			padding-bottom: 11px;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			border-bottom: 1px dotted rgb(151,151,151)
+		}
+		#row1{
+			margin-top: 38px;
+		}
+		#row2{
+			margin-top: 19px;
+		}
+		#row3{
+			margin-top: 19px;
+		}
+			.date{
+				width: 30px;
+				padding-right: 10px;
+				padding-left: 2px;
+				border-right: 1px solid rgb(199,199,199);
+			}
+				.number{
+					color: #f2ac04;
+					font-size: 18px;
+					font-family: "Helvetica Neue LT - Medium Cond";
+				}
+				.month{
+					color: #777777;
+					font-size: 10px;
+					font-family: "Interstate Cond Mono";
+				}
+			.anEarlyWrapper{
+				flex-direction: column;
+				align-items: flex-start;
+				padding-left: 12px;
+			}
+				.anEarlyStrong{
+					font-family: "Myriad Pro";
+					font-size: 16px;
+					color: #565656;
+				}
+				.anEarlyNormal{
+					font-family: Tahoma;
+					font-size: 12px;
+					color: #939393;
+					margin-top: 3px;
+				}
+.whoWeAre{
+	width: 304px;
+	padding-right: 35px;
+	border-right: 1px solid rgb(229,229,229);
+	padding-bottom: 73px;
+}
+	.moreButtonDiv{
+		justify-content: flex-end;
+	}
+	#moreButtonDiv1{
+		width: 100%;
+		margin-top: -4px;
+		padding-right: 2px;
+	}
+		.moreButton{
+			height: 15px;
+			width: 57px;
+			border: none;
+			color: #ffffff;
+			font-size: 12px;
+			font-family: Tahoma;
+			background-image: url(../images/morebutton.png);
+			background-size: 100%;
+			padding-bottom: 5px;
+			padding-right: 25px;
+		}
+h3{
+	display: block;
+	color: #565656;
+	font-size: 18px;
+	font-weight: 400;
+}
+p{
+	margin-top: 29px;
+	padding-right: 7px;
+	font-family: "Helvetica CE";
+	font-size: 16px;
+	line-height: 23px;
+	color: #3c3c3c;
+}
+.contactUs{
+	flex-direction: column;
+	align-items: flex-start;
+	padding-right: 22px;
+}
+	.phone, .fax, .mail, .adress{
+		color: #757575;
+		font-family: "Swiss 721 BT - Black Condensed";
+		font-size: 16px;
+		border-bottom: 1px dotted #999999;
+		flex-wrap: nowrap;
+	}
+		.imageWrapper{
+			width: 40px;
+			flex-wrap: nowrap;
+		}
+			#phoneWrapper{
+				padding-left: 5px;
+			}
+				.phoneImg, .faxImg{
+					height: 24px;
+				}
+				.mailImg{
+					height: 18px;
+				}
+				.houseImg{
+					height: 28px;
+				}
+	.phone{
+		margin-top: 26px;
+		padding-bottom: 8px;
+	}
+	.fax{
+		margin-top: 9px;
+		padding-bottom: 10px;
+	}
+	.mail{
+		margin-top: 13px;
+		padding-bottom: 13px;
+	}
+	.adress{
+		align-items: flex-start;
+		margin-top: 8px;
+		border: none;
+	}
+		span.adressText{
+			display: block;
+			margin-top: 8px;
+		}
+.ourClients{
+	height: 10px;
+	margin-bottom: -9px;
+	margin-left: 37px;
+}
+.clientsBlock{
+	border-top: 1px solid rgb(204,204,204);
+	border-bottom: 1px solid rgb(204,204,204);
+}
+	.clients{
+		flex: 1;
+		height: 107px;
+		background-position: center;
+		background-repeat: no-repeat;	
+	}
+	#atnt{
+		background-image: url(../images/atnt.png);
+	}
+	#inc{
+		background-image: url(../images/inc.png);
+	}
+	#autoimmune{
+		background-image: url(../images/autoimmune.png);
+	}
+	#visa{
+		background-image: url(../images/visa.png);
+	}
+	#polar{
+		background-image: url(../images/polar.png);
+	}
+	#gap{
+		background-image: url(../images/gap.png);
+	}
+.logoEnd{
+	justify-content: center;
+	flex-wrap: nowrap;
+	margin-top: 2px;
+
+}	
+	.logoEndCircleLeft{
+		height: 33px;
+		width: 33px;
+		border-radius: 50%;
+		background: #f8d277;
+	}
+	.logoEndCircleRight{
+		height: 33px;
+		width: 33px;
+		border-radius: 50%;
+		background: #f2ac04;
+		margin-left: -23px;
+	}
+	h4{
+		color: #3c3c3c;
+		font-family: "Helvetica CE";
+		font-size: 20px;
+		font-weight: 400;
+		margin-left: 15px;
+	}
+.footerBar{
+	justify-content: center;
+}
+	.footerLinks{
+		font-family: "Swiss 721 BT - Thin";
+		color: #535353;
+		font-size: 10px;
+		text-decoration: none;
+		padding-left: 7px;
+		padding-right: 10px;
+		border-right: 1px solid rgb(143,143,143);
+	}
+	.footerLinks:hover{
+		text-decoration: underline;
+	}
+		#contact{
+			border: none;
+		}
+.copyright{
+	align-items: flex-end;
+	justify-content: center;
+	margin-top: 1px;
+}
+	.copy1{
+		font-size: 12px;
+		color: #545454;
+		font-family: "Swiss 721 BT - Thin";
+	}
+	.copy2{
+		font-size: 16px;
+		color: #545454;
+		font-family: "Swiss 721 BT - Thin";
+		margin-left: 3px;
+	}
